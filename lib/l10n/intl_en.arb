@@ -1,0 +1,8 @@
+{
+  "@@last_modified": "2019-12-24T08:55:53.838583",
+  "appName": "Livee Streamer",
+  "@appName": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
