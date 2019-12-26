@@ -1,5 +1,5 @@
 #import "WowzaStreamPlugin.h"
-#import "WowzaStreamPlugin-Swift.h"
+#import "Runner-Swift.h"
 
 @implementation WowzaStreamPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
