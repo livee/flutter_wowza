@@ -27,15 +27,16 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
             SwiftWowzaStreamPlugin.lineColor = "#ff6666"
         }
 
-        let controller = VideoViewController()
-        controller.delegate = self
+        //let controller = VideoViewController()
+        //controller.delegate = self
 
-        let viewController:UIViewController = UIStoryboard(name: "VideoView", bundle: nil).instantiateViewControllerWithIdentifier("videoViewController") as UIViewController
-        SwiftWowzaStreamPlugin.viewController.presentViewController(viewController, animated: false, completion: nil)
+        //let viewController:UIViewController = UIStoryboard(name: "VideoView", bundle: //nil).instantiateViewControllerWithIdentifier("videoViewController") as UIViewController
+        //SwiftWowzaStreamPlugin.viewController.present(viewController, animated: false, completion: nil)
 
-        //let storyboard = UIStoryboard(name: "VideoView", bundle: nil)
-        //let controller = storyboard.instantiateViewController(withIdentifier: "videoViewController")
-        //SwiftWowzaStreamPlugin.viewController.present(controller, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "VideoView", bundle: nil)
+        let videoViewController = storyboard.instantiateViewController(withIdentifier: "VideoViewControllerID")
+        //videoViewController.delegate = self
+        SwiftWowzaStreamPlugin.viewController.present(videoViewController, animated: true, completion: nil)
 
         //SwiftWowzaStreamPlugin.viewController.present(controller, animated: true) {}
     }

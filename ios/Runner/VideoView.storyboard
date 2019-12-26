@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mjt-yW-ku4">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mjt-yW-ku4">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Video View Controller-->
         <scene sceneID="gkK-bu-F86">
             <objects>
-                <viewController id="Mjt-yW-ku4" customClass="VideoViewController" customModule="SwiftSDKSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoViewControllerID" id="Mjt-yW-ku4" customClass="VideoViewController" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OPt-HR-DBp"/>
                         <viewControllerLayoutGuide type="bottom" id="SLE-NL-cXE"/>
@@ -55,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-uu-HxI" userLabel="Torch Button">
-                                <rect key="frame" x="21" y="35" width="45" height="45"/>
+                                <rect key="frame" x="21" y="15" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="PIR-BA-euW"/>
                                     <constraint firstAttribute="height" constant="45" id="eZ7-Az-sxm"/>
@@ -66,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B64-AI-CKR" userLabel="Mic Button">
-                                <rect key="frame" x="66" y="35" width="45" height="45"/>
+                                <rect key="frame" x="66" y="15" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="2WP-vM-UaE"/>
                                     <constraint firstAttribute="height" constant="45" id="8YG-sn-mTE"/>
@@ -115,6 +113,6 @@
         <image name="start_button" width="75" height="75"/>
         <image name="switch_camera_button" width="45" height="45"/>
         <image name="torch_on_button" width="45" height="45"/>
-        <image name="wowza" width="320" height="112"/>
+        <image name="wowza" width="320" height="112.5"/>
     </resources>
 </document>
