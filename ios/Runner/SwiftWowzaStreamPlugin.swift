@@ -24,7 +24,7 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
 
         let storyboard = UIStoryboard(name: "VideoView", bundle: nil)
         let videoViewController:VideoViewController = storyboard.instantiateViewController(withIdentifier: "VideoViewControllerID") as! VideoViewController;
-        videoViewController.delegate = self
+        //videoViewController.delegate = self
         
         videoViewController.modalPresentationStyle = .fullScreen
 

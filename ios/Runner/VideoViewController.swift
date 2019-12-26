@@ -205,6 +205,14 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
     }
 
     @IBAction func didTapSettingsButton(_ sender:AnyObject?) {
+        
+        self.goCoder?.cameraPreview?.stop()
+        self.goCoder?.cameraView = nil
+        self.goCoder?.unregisterVideoSink(self)
+        self.goCoder?.unregisterAudioSink(self)
+        //self.goCoder?.unregisterAudioEncoderSink(self)
+        //self.goCoder?.unregisterAudioEncoderSink(self)
+        //self.goCoder?.unregisterDataSink(self, eventName:"onTextData")
         self.dismiss(animated: true, completion: nil)
         
       //if let settingsNavigationController = UIStoryboard(name: "AppSettings", bundle: nil).instantiateViewController(withIdentifier: "settingsNavigationController") as? UINavigationController {
