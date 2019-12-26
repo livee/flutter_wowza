@@ -7,19 +7,19 @@ import Flutter
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-    //let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
-    //let batteryChannel = FlutterMethodChannel(name: "test_activity",
-    //                                          binaryMessenger: controller.binaryMessenger)
-//
-    //batteryChannel.setMethodCallHandler({
-    //  [weak self] (call: FlutterMethodCall, result: FlutterResult) -> Void in
-    //  // Note: this method is invoked on the UI thread.
-    //  guard call.method == "helloFromNativeCode" else {
-    //    result(FlutterMethodNotImplemented)
-    //    return
-    //  }
-    //  self?.receiveBatteryLevel(result: result)
-    //})
+    let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
+    let batteryChannel = FlutterMethodChannel(name: "test_activity",
+                                              binaryMessenger: controller.binaryMessenger)
+
+    batteryChannel.setMethodCallHandler({
+      [weak self] (call: FlutterMethodCall, result: FlutterResult) -> Void in
+      // Note: this method is invoked on the UI thread.
+      guard call.method == "helloFromNativeCode" else {
+        result(FlutterMethodNotImplemented)
+        return
+      }
+      self?.receiveBatteryLevel(result: result)
+    })
     
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
