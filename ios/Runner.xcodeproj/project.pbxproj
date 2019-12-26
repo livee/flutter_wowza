@@ -11,6 +11,14 @@
 		1C7862EB23B3B2E0002D109D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7862EA23B3B2E0002D109D /* VideoViewController.swift */; };
 		1C78630523B44601002D109D /* WowzaGoCoderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7862E823B3B155002D109D /* WowzaGoCoderSDK.framework */; };
 		1C78630623B44601002D109D /* WowzaGoCoderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7862E823B3B155002D109D /* WowzaGoCoderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C78632C23B44825002D109D /* SceneKitMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C78632123B44824002D109D /* SceneKitMain.storyboard */; };
+		1C78632D23B44825002D109D /* CustomFrameSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78632223B44824002D109D /* CustomFrameSizeViewController.m */; };
+		1C78632E23B44825002D109D /* AAPLGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78632323B44824002D109D /* AAPLGameViewController.m */; };
+		1C78632F23B44825002D109D /* SettingsTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78632623B44824002D109D /* SettingsTextFieldCell.m */; };
+		1C78633023B44825002D109D /* AppSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C78632723B44824002D109D /* AppSettings.storyboard */; };
+		1C78633123B44825002D109D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78632823B44824002D109D /* SettingsViewController.m */; };
+		1C78633223B44825002D109D /* GoCoderSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C78632A23B44825002D109D /* GoCoderSettings.storyboard */; };
+		1C78633323B44825002D109D /* SettingsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78632B23B44825002D109D /* SettingsViewModel.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -44,6 +52,19 @@
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		1C7862E823B3B155002D109D /* WowzaGoCoderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WowzaGoCoderSDK.framework; sourceTree = SOURCE_ROOT; };
 		1C7862EA23B3B2E0002D109D /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		1C78631F23B44824002D109D /* SettingsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewModel.h; sourceTree = "<group>"; };
+		1C78632023B44824002D109D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		1C78632123B44824002D109D /* SceneKitMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SceneKitMain.storyboard; sourceTree = "<group>"; };
+		1C78632223B44824002D109D /* CustomFrameSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFrameSizeViewController.m; sourceTree = "<group>"; };
+		1C78632323B44824002D109D /* AAPLGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLGameViewController.m; sourceTree = "<group>"; };
+		1C78632423B44824002D109D /* AAPLGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLGameViewController.h; sourceTree = "<group>"; };
+		1C78632523B44824002D109D /* CustomFrameSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFrameSizeViewController.h; sourceTree = "<group>"; };
+		1C78632623B44824002D109D /* SettingsTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTextFieldCell.m; sourceTree = "<group>"; };
+		1C78632723B44824002D109D /* AppSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppSettings.storyboard; sourceTree = "<group>"; };
+		1C78632823B44824002D109D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		1C78632923B44825002D109D /* SettingsTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTextFieldCell.h; sourceTree = "<group>"; };
+		1C78632A23B44825002D109D /* GoCoderSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GoCoderSettings.storyboard; sourceTree = "<group>"; };
+		1C78632B23B44825002D109D /* SettingsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewModel.m; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -78,11 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C78630723B44702002D109D /* New Group */ = {
+		1C78633423B4484D002D109D /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				1C78632423B44824002D109D /* AAPLGameViewController.h */,
+				1C78632323B44824002D109D /* AAPLGameViewController.m */,
+				1C78632723B44824002D109D /* AppSettings.storyboard */,
+				1C78632523B44824002D109D /* CustomFrameSizeViewController.h */,
+				1C78632223B44824002D109D /* CustomFrameSizeViewController.m */,
+				1C78632A23B44825002D109D /* GoCoderSettings.storyboard */,
+				1C78632123B44824002D109D /* SceneKitMain.storyboard */,
+				1C78632923B44825002D109D /* SettingsTextFieldCell.h */,
+				1C78632623B44824002D109D /* SettingsTextFieldCell.m */,
+				1C78632023B44824002D109D /* SettingsViewController.h */,
+				1C78632823B44824002D109D /* SettingsViewController.m */,
+				1C78631F23B44824002D109D /* SettingsViewModel.h */,
+				1C78632B23B44825002D109D /* SettingsViewModel.m */,
 			);
-			path = "New Group";
+			name = shared;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -121,7 +155,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
-				1C78630723B44702002D109D /* New Group */,
+				1C78633423B4484D002D109D /* shared */,
 				1C7862EA23B3B2E0002D109D /* VideoViewController.swift */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
@@ -226,8 +260,11 @@
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				1C78633223B44825002D109D /* GoCoderSettings.storyboard in Resources */,
+				1C78632C23B44825002D109D /* SceneKitMain.storyboard in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				1C78633023B44825002D109D /* AppSettings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +343,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C78632E23B44825002D109D /* AAPLGameViewController.m in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				1C78633323B44825002D109D /* SettingsViewModel.m in Sources */,
+				1C78632D23B44825002D109D /* CustomFrameSizeViewController.m in Sources */,
+				1C78632F23B44825002D109D /* SettingsTextFieldCell.m in Sources */,
 				1C7862EB23B3B2E0002D109D /* VideoViewController.swift in Sources */,
+				1C78633123B44825002D109D /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
