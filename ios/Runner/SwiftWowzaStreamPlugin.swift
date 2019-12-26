@@ -34,8 +34,9 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
         //SwiftWowzaStreamPlugin.viewController.present(viewController, animated: false, completion: nil)
 
         let storyboard = UIStoryboard(name: "VideoView", bundle: nil)
-        let videoViewController = storyboard.instantiateViewController(withIdentifier: "VideoViewControllerID")
-        //videoViewController.delegate = self
+        let videoViewController:VideoViewController = storyboard.instantiateViewController(withIdentifier: "VideoViewControllerID") as! VideoViewController;
+        videoViewController.delegate = self
+        
         SwiftWowzaStreamPlugin.viewController.present(videoViewController, animated: true, completion: nil)
 
         //SwiftWowzaStreamPlugin.viewController.present(controller, animated: true) {}
