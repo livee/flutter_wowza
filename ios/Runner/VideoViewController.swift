@@ -10,6 +10,10 @@
 import UIKit
 import WowzaGoCoderSDK
 
+protocol VideoViewControllerDelegate{
+
+}
+
 class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVideoSink, WOWZAudioSink {
 
     //MARK: - Class Member Variables
@@ -26,7 +30,7 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
     @IBOutlet weak var micButton:UIButton!
     @IBOutlet weak var bitmapOverlayImgView:UIImageView!
 
-
+    public var delegate:VideoViewControllerDelegate? = nil
     var goCoder:WowzaGoCoder?
     var goCoderConfig:WowzaConfig!
 

@@ -1,9 +1,8 @@
 import Flutter
 import UIKit
 import AVFoundation
-import VideoViewController
 
-public class WowzaStreamPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
+public class WowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControllerDelegate {
     
     public static var viewController = UIViewController()
     public static var lineColor:String=""
@@ -12,7 +11,6 @@ public class WowzaStreamPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
     var pendingResult:FlutterResult!
     public static var isContinuousScan:Bool=false
     static var barcodeStream:FlutterEventSink?=nil
-    public static var scanMode = ScanMode.QR.index
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         viewController = (UIApplication.shared.delegate?.window??.rootViewController)!
