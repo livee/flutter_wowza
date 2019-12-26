@@ -21,24 +21,40 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
 
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         let args:Dictionary<String, AnyObject> = call.arguments as! Dictionary<String, AnyObject>;
-        if let colorCode = args["lineColor"] as? String{
-            SwiftWowzaStreamPlugin.lineColor = colorCode
-        }else {
-            SwiftWowzaStreamPlugin.lineColor = "#ff6666"
-        }
-
-        //let controller = VideoViewController()
-        //controller.delegate = self
-
-        //let viewController:UIViewController = UIStoryboard(name: "VideoView", bundle: //nil).instantiateViewControllerWithIdentifier("videoViewController") as UIViewController
-        //SwiftWowzaStreamPlugin.viewController.present(viewController, animated: false, completion: nil)
 
         let storyboard = UIStoryboard(name: "VideoView", bundle: nil)
         let videoViewController:VideoViewController = storyboard.instantiateViewController(withIdentifier: "VideoViewControllerID") as! VideoViewController;
         videoViewController.delegate = self
         
-        SwiftWowzaStreamPlugin.viewController.present(videoViewController, animated: true, completion: nil)
+        let goCoderConfig = WowzaConfig()
+        ley SDKSampleSavedConfigKey = videoViewController.SDKSampleSavedConfigKey
 
-        //SwiftWowzaStreamPlugin.viewController.present(controller, animated: true) {}
+        if let savedConfig:Data = UserDefaults.standard.object(forKey: SDKSampleSavedConfigKey) as? Data {
+            if let wowzaConfig = NSKeyedUnarchiver.unarchiveObject(with: savedConfig) as? WowzaConfig {
+                goCoderConfig = wowzaConfig
+            }
+        }
+
+        if let hostAddress = args["host_address"] as? String{
+            goCoderConfig.hostAddress = hostAddress
+        }
+
+        if let portNumber = args["port_number"] as? Integer{
+            goCoderConfig.hostAddress = portNumber
+        }
+        
+        if let appName = args["app_name"] as? String{
+            goCoderConfig.applicationName = appName
+        }
+        
+        if let streamName = args["stream_name"] as? String{
+            goCoderConfig.streamName = streamName
+        }
+
+        let savedConfigData = NSKeyedArchiver.archivedData(withRootObject: goCoderConfig!)
+        UserDefaults.standard.set(savedConfigData, forKey: SDKSampleSavedConfigKey)
+        UserDefaults.standard.synchronize()
+
+        SwiftWowzaStreamPlugin.viewController.present(videoViewController, animated: true, completion: nil)
     }
 }
