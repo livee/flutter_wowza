@@ -26,8 +26,8 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
         let videoViewController:VideoViewController = storyboard.instantiateViewController(withIdentifier: "VideoViewControllerID") as! VideoViewController;
         videoViewController.delegate = self
         
-        let goCoderConfig = WowzaConfig()
-        ley SDKSampleSavedConfigKey = videoViewController.SDKSampleSavedConfigKey
+        var goCoderConfig = WowzaConfig()
+        let SDKSampleSavedConfigKey = videoViewController.SDKSampleSavedConfigKey
 
         if let savedConfig:Data = UserDefaults.standard.object(forKey: SDKSampleSavedConfigKey) as? Data {
             if let wowzaConfig = NSKeyedUnarchiver.unarchiveObject(with: savedConfig) as? WowzaConfig {
@@ -39,8 +39,8 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
             goCoderConfig.hostAddress = hostAddress
         }
 
-        if let portNumber = args["port_number"] as? Integer{
-            goCoderConfig.hostAddress = portNumber
+        if let portNumber = args["port_number"] as? UInt{
+            goCoderConfig.portNumber = portNumber
         }
         
         if let appName = args["app_name"] as? String{
@@ -51,7 +51,7 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
             goCoderConfig.streamName = streamName
         }
 
-        let savedConfigData = NSKeyedArchiver.archivedData(withRootObject: goCoderConfig!)
+        let savedConfigData = NSKeyedArchiver.archivedData(withRootObject: goCoderConfig)
         UserDefaults.standard.set(savedConfigData, forKey: SDKSampleSavedConfigKey)
         UserDefaults.standard.synchronize()
 

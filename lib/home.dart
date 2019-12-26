@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
           .invokeMethod('helloFromNativeCode', <String, dynamic>{
         'cloud_connection_code': '',
         'host_address': _hostController.text,
-        'port_number': _portController.text,
+        'port_number': int.tryParse(_portController.text) ?? 1935,
         'app_name': _appNameController.text,
         'stream_name': _streamNameController.text,
         'source_user_name': '',
