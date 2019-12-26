@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="45" id="NZH-AO-Y7H"/>
                                     <constraint firstAttribute="height" constant="45" id="VKq-N5-yxX"/>
                                 </constraints>
-                                <state key="normal" image="settings_button"/>
+                                <state key="normal" image="back_icon"/>
                                 <connections>
                                     <action selector="didTapSettingsButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="xgn-YF-7dR"/>
                                 </connections>
@@ -108,8 +108,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_icon" width="41" height="41"/>
         <image name="mic_on_button" width="45" height="45"/>
-        <image name="settings_button" width="45" height="45"/>
         <image name="start_button" width="75" height="75"/>
         <image name="switch_camera_button" width="45" height="45"/>
         <image name="torch_on_button" width="45" height="45"/>

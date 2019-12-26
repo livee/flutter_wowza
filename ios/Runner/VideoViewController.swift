@@ -139,7 +139,7 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
             self.goCoder?.cameraPreview?.start()
         }
     }
-    
+        
     override func viewDidDisappear(_ animated: Bool) {
         self.goCoder?.cameraPreview?.stop()
     }
@@ -205,19 +205,21 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
     }
 
     @IBAction func didTapSettingsButton(_ sender:AnyObject?) {
-        if let settingsNavigationController = UIStoryboard(name: "AppSettings", bundle: nil).instantiateViewController(withIdentifier: "settingsNavigationController") as? UINavigationController {
+        self.dismiss(animated: true, completion: nil)
+        
+      //if let settingsNavigationController = UIStoryboard(name: "AppSettings", bundle: nil).instantiateViewController(withIdentifier: "settingsNavigationController") as? UINavigationController {
 
-            if let settingsViewController = settingsNavigationController.topViewController as? SettingsViewController {
-                settingsViewController.addAllSections()
-                settingsViewController.removeDisplay(.recordVideoLocally)
-                settingsViewController.removeDisplay(.backgroundMode)
-                let viewModel = SettingsViewModel(sessionConfig: goCoderConfig)
-                viewModel?.supportedPresetConfigs = goCoder?.cameraPreview?.camera?.supportedPresetConfigs
-                settingsViewController.viewModel = viewModel!
-            }
-            
-            self.present(settingsNavigationController, animated: true, completion: nil)
-        }
+      //    if let settingsViewController = settingsNavigationController.topViewController as? SettingsViewController {
+      //        settingsViewController.addAllSections()
+      //        settingsViewController.removeDisplay(.recordVideoLocally)
+      //        settingsViewController.removeDisplay(.backgroundMode)
+      //        let viewModel = SettingsViewModel(sessionConfig: goCoderConfig)
+      //        viewModel?.supportedPresetConfigs = goCoder?.cameraPreview?.camera?.supportedPresetConfigs
+      //        settingsViewController.viewModel = viewModel!
+      //    }
+      //
+      //    self.present(settingsNavigationController, animated: true, completion: nil)
+      //}
     }
 
     func updateUIControls() {

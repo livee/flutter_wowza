@@ -26,6 +26,8 @@ public class SwiftWowzaStreamPlugin: NSObject, FlutterPlugin, VideoViewControlle
         let videoViewController:VideoViewController = storyboard.instantiateViewController(withIdentifier: "VideoViewControllerID") as! VideoViewController;
         videoViewController.delegate = self
         
+        videoViewController.modalPresentationStyle = .fullScreen
+
         var goCoderConfig = WowzaConfig()
         let SDKSampleSavedConfigKey = videoViewController.SDKSampleSavedConfigKey
 
