@@ -9,7 +9,7 @@
         android:summary="@string/cloud_summary"
         android:title="@string/cloud_title">
 
-        <com.livee.app.config.AutoCompletePreference
+        <com.livee.streamer.config.AutoCompletePreference
             android:autoText="false"
             android:dialogTitle="@string/wz_cloud_code_dialog_title"
             android:imeOptions="actionDone"
@@ -24,7 +24,7 @@
         android:summary="@string/connection_settings_summary"
         android:title="@string/connection_settings_title">
 
-        <com.livee.app.config.AutoCompletePreference
+        <com.livee.streamer.config.AutoCompletePreference
             android:autoText="false"
             android:dialogTitle="@string/wz_live_host_address_dialog_title"
             android:imeOptions="actionDone"
@@ -34,7 +34,7 @@
             android:summary="@string/wz_live_host_address_summary"
             android:title="@string/wz_live_host_address_title"/>
 
-        <com.livee.app.config.AutoCompletePreference
+        <com.livee.streamer.config.AutoCompletePreference
             android:autoText="false"
             android:defaultValue="@string/wz_live_port_number_default_value"
             android:dialogTitle="@string/wz_live_port_number_dialog_title"
@@ -54,7 +54,7 @@
             />
 -->
 
-        <com.livee.app.config.AutoCompletePreference
+        <com.livee.streamer.config.AutoCompletePreference
             android:autoText="false"
             android:defaultValue="@string/wz_live_app_name_default_value"
             android:dialogTitle="@string/wz_live_app_name_dialog_title"
@@ -64,7 +64,7 @@
             android:summary="@string/wz_live_app_name_summary"
             android:title="@string/wz_live_app_name_title"/>
 
-        <com.livee.app.config.AutoCompletePreference
+        <com.livee.streamer.config.AutoCompletePreference
             android:autoText="false"
             android:defaultValue="@string/wz_live_stream_name_default_value"
             android:dialogTitle="@string/wz_live_stream_name_dialog_title"
@@ -74,7 +74,7 @@
             android:summary="@string/wz_live_stream_name_summary"
             android:title="@string/wz_live_stream_name_title"/>
 
-        <com.livee.app.config.AutoCompletePreference
+        <com.livee.streamer.config.AutoCompletePreference
             android:autoText="false"
             android:dialogTitle="@string/wz_live_username_dialog_title"
             android:key="wz_live_username"

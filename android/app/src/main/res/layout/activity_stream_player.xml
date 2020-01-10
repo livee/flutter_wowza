@@ -23,7 +23,7 @@
         android:background="#00ffffff"
         android:clickable="false">
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_mic"
@@ -46,7 +46,7 @@
             android:max="100"
             android:id="@+id/sb_volume"/>
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_scale"
@@ -58,7 +58,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"/>
 
-        <com.livee.app.ui.TimerView
+        <com.livee.streamer.ui.TimerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/zero_time"
@@ -94,7 +94,7 @@
             android:visibility="gone"
             android:text="@string/wz_pause_network" />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_play_stream"
@@ -107,7 +107,7 @@
             android:layout_centerHorizontal="true"
             />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_settings"
@@ -139,7 +139,7 @@
 
     </LinearLayout>
 
-    <com.livee.app.ui.StatusView
+    <com.livee.streamer.ui.StatusView
         android:id="@+id/statusView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -147,6 +147,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
-    </com.livee.app.ui.StatusView>
+    </com.livee.streamer.ui.StatusView>
 
 </RelativeLayout>

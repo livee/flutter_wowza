@@ -24,7 +24,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_broadcast"
@@ -37,7 +37,7 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp" />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_settings"
@@ -50,10 +50,10 @@
 
     </RelativeLayout>
 
-    <com.livee.app.ui.StatusView
+    <com.livee.streamer.ui.StatusView
         android:id="@+id/statusView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible">
-    </com.livee.app.ui.StatusView>
+    </com.livee.streamer.ui.StatusView>
 </RelativeLayout>

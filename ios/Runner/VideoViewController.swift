@@ -19,7 +19,7 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
     //MARK: - Class Member Variables
 
     public let SDKSampleSavedConfigKey = "SDKSampleSavedConfigKey"
-    let SDKSampleAppLicenseKey = "GOSK-BA45-010C-4D16-905C-06C5"
+    let SDKSampleAppLicenseKey = "GOSK-5F47-010C-B99B-C8AD-BB42"
     let BlackAndWhiteEffectKey = "BlackAndWhiteKey"
     let BitmapOverlayEffectKey = "BitmapOverlayKey"
 

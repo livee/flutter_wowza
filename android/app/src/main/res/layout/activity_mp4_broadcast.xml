@@ -39,7 +39,7 @@
         android:background="#00ffffff"
         android:clickable="false">
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:id="@+id/ic_broadcast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp" />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:id="@+id/ic_loop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             android:layout_alignParentStart="false"
             android:layout_alignParentEnd="true" />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:id="@+id/ic_settings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true" />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:id="@+id/ic_videos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,11 +124,11 @@
 
     </RelativeLayout>
 
-    <com.livee.app.ui.StatusView
+    <com.livee.streamer.ui.StatusView
         android:id="@+id/statusView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible">
-    </com.livee.app.ui.StatusView>
+    </com.livee.streamer.ui.StatusView>
 
 </RelativeLayout>

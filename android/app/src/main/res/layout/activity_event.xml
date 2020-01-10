@@ -48,7 +48,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="false">
 
-            <com.livee.app.ui.MultiStateButton
+            <com.livee.streamer.ui.MultiStateButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ic_switch_camera"
@@ -59,7 +59,7 @@
                 android:padding="10dp"
                 android:contentDescription="@string/switch_camera" />
 
-            <com.livee.app.ui.MultiStateButton
+            <com.livee.streamer.ui.MultiStateButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ic_torch"
@@ -72,7 +72,7 @@
 
         </LinearLayout>
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_ping"
@@ -83,7 +83,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true" />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_broadcast"
@@ -96,7 +96,7 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp" />
 
-        <com.livee.app.ui.MultiStateButton
+        <com.livee.streamer.ui.MultiStateButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ic_settings"
@@ -107,7 +107,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true" />
 
-        <com.livee.app.ui.TimerView
+        <com.livee.streamer.ui.TimerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/zero_time"
@@ -149,12 +149,12 @@
 
     </RelativeLayout>
 
-    <com.livee.app.ui.StatusView
+    <com.livee.streamer.ui.StatusView
         android:id="@+id/statusView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
-    </com.livee.app.ui.StatusView>
+    </com.livee.streamer.ui.StatusView>
 </RelativeLayout>
