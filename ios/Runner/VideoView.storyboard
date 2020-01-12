@@ -19,46 +19,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arF-WA-9vm">
+                            <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arF-WA-9vm" customClass="FontAwesomeButton" customModule="FontAwesomeKit_Swift">
                                 <rect key="frame" x="150" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="7U0-lX-hLc"/>
                                     <constraint firstAttribute="height" constant="75" id="fnG-3F-O8U"/>
                                 </constraints>
-                                <state key="normal" image="start_button"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalUnicode" value="f111"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedUnicode" value="f111"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedUnicode" value="f111"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="disabledUnicode" value="f111"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTapBroadcastButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="Bg9-nE-kYi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndK-WN-j7l">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndK-WN-j7l" customClass="FontAwesomeButton" customModule="FontAwesomeKit_Swift">
                                 <rect key="frame" x="314" y="587" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="NZH-AO-Y7H"/>
                                     <constraint firstAttribute="height" constant="45" id="VKq-N5-yxX"/>
                                 </constraints>
-                                <state key="normal" image="back_icon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalUnicode" value="f0a8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedUnicode" value="f0a8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedUnicode" value="f0a8"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="disabledUnicode" value="f0a8"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTapSettingsButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="xgn-YF-7dR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzE-ZV-09Z" userLabel="Switch Camera Button">
+                            <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzE-ZV-09Z" userLabel="Switch Camera Button" customClass="FontAwesomeButton" customModule="FontAwesomeKit_Swift">
                                 <rect key="frame" x="21" y="587" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="8Kc-bq-XDI"/>
                                     <constraint firstAttribute="height" constant="45" id="jVo-sW-iRd"/>
                                 </constraints>
-                                <state key="normal" image="switch_camera_button"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalUnicode" value="f083"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="highlightedUnicode" value="f083"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedUnicode" value="f083"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="disabledUnicode" value="f083"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTapSwitchCameraButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="ddF-oZ-HSb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-uu-HxI" userLabel="Torch Button">
+                            <button opaque="NO" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-uu-HxI" userLabel="Torch Button" customClass="FontAwesomeButton" customModule="FontAwesomeKit_Swift">
                                 <rect key="frame" x="21" y="15" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="PIR-BA-euW"/>
                                     <constraint firstAttribute="height" constant="45" id="eZ7-Az-sxm"/>
                                 </constraints>
-                                <state key="normal" image="torch_on_button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalUnicode" value="f0e7"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTapTorchButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="K6l-y2-f7t"/>
                                 </connections>
@@ -104,15 +127,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqi-Pb-hDf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449" y="583"/>
+            <point key="canvasLocation" x="448.80000000000001" y="582.45877061469275"/>
         </scene>
     </scenes>
     <resources>
-        <image name="back_icon" width="41" height="41"/>
         <image name="mic_on_button" width="45" height="45"/>
-        <image name="start_button" width="75" height="75"/>
-        <image name="switch_camera_button" width="45" height="45"/>
-        <image name="torch_on_button" width="45" height="45"/>
         <image name="wowza" width="320" height="112.5"/>
     </resources>
 </document>

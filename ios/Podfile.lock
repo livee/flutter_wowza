@@ -2,10 +2,16 @@ PODS:
   - Flutter (1.0.0)
   - fluttertoast (0.0.2):
     - Flutter
+  - FontAwesomeKit.Swift (1.0.2)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - FontAwesomeKit.Swift
+
+SPEC REPOS:
+  trunk:
+    - FontAwesomeKit.Swift
 
 EXTERNAL SOURCES:
   Flutter:
@@ -16,7 +22,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
+  FontAwesomeKit.Swift: cf839537bbff89b5853a00653b2a2f31748c2c1c
 
-PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
+PODFILE CHECKSUM: 311a2e18efc9525cecb34c654e7e565a5c8c6f0f
 
 COCOAPODS: 1.8.4
