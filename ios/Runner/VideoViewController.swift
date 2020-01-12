@@ -71,6 +71,8 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
             self.showAlert("GoCoder SDK Licensing Error", error: goCoderLicensingError as NSError)
         }
         
+        FontAwesomeConfig.usesProFonts = true
+
         settingsButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 40, style: .solid)
         settingsButton.setTitle(String.fontAwesomeIcon(name: .reply), for: .normal)
         
@@ -84,7 +86,7 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
         torchButton.setTitle(String.fontAwesomeIcon(name: .lightbulb), for: .normal)
         
         micButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
-        micButton.setTitle(String.fontAwesomeIcon(name: .microphone), for: .normal)
+        micButton.setTitle(String.fontAwesomeIcon(name: .volumeDown), for: .normal)
         
     }
 
@@ -191,10 +193,10 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
                 
                 micButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
                 if audioMuted {
-                    micButton.setTitle(String.fontAwesomeIcon(name: .microphoneAltSlash), for: .normal)
+                    micButton.setTitle(String.fontAwesomeIcon(name: .volumeMute), for: .normal)
                 }
                 else {
-                    micButton.setTitle(String.fontAwesomeIcon(name: .microphone), for: .normal)
+                    micButton.setTitle(String.fontAwesomeIcon(name: .volumeDown), for: .normal)
                 }
             }
         }
@@ -231,10 +233,10 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
         
         micButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
         if newMutedState {
-            micButton.setTitle(String.fontAwesomeIcon(name: .microphoneAltSlash), for: .normal)
+            micButton.setTitle(String.fontAwesomeIcon(name: .volumeMute), for: .normal)
         }
         else {
-            micButton.setTitle(String.fontAwesomeIcon(name: .microphone), for: .normal)
+            micButton.setTitle(String.fontAwesomeIcon(name: .volumeDown), for: .normal)
         }
     }
 
