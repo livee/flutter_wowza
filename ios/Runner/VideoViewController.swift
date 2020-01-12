@@ -9,6 +9,7 @@
 
 import UIKit
 import WowzaGoCoderSDK
+import FontAwesome
 
 protocol VideoViewControllerDelegate{
 
@@ -62,7 +63,6 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
             goCoderConfig = WowzaConfig()
         }
 
-        // Log version and platform info
         print("WowzaGoCoderSDK version =\n major: \(WOWZVersionInfo.majorVersion())\n minor: \(WOWZVersionInfo.minorVersion())\n revision: \(WOWZVersionInfo.revision())\n build: \(WOWZVersionInfo.buildNumber())\n string: \(WOWZVersionInfo.string())\n verbose string: \(WOWZVersionInfo.verboseString())")
 
         print("Platform Info:\n\(WOWZPlatformInfo.string())")
@@ -70,6 +70,22 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
         if let goCoderLicensingError = WowzaGoCoder.registerLicenseKey(SDKSampleAppLicenseKey) {
             self.showAlert("GoCoder SDK Licensing Error", error: goCoderLicensingError as NSError)
         }
+        
+        settingsButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 40, style: .solid)
+        settingsButton.setTitle(String.fontAwesomeIcon(name: .reply), for: .normal)
+        
+        switchCameraButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
+        switchCameraButton.setTitle(String.fontAwesomeIcon(name: .sync), for: .normal)
+        
+        broadcastButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 75, style: .solid)
+        broadcastButton.setTitle(String.fontAwesomeIcon(name: .circle), for: .normal)
+        
+        torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
+        torchButton.setTitle(String.fontAwesomeIcon(name: .lightbulb), for: .normal)
+        
+        micButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
+        micButton.setTitle(String.fontAwesomeIcon(name: .microphone), for: .normal)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -172,7 +188,14 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
                 receivedGoCoderEventCodes.removeAll()
                 goCoder?.startStreaming(self)
                 let audioMuted = goCoder?.isAudioMuted ?? false
-                micButton.setImage(UIImage(named: audioMuted ? "mic_off_button" : "mic_on_button"), for: UIControl.State())
+                
+                micButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
+                if audioMuted {
+                    micButton.setTitle(String.fontAwesomeIcon(name: .microphoneAltSlash), for: .normal)
+                }
+                else {
+                    micButton.setTitle(String.fontAwesomeIcon(name: .microphone), for: .normal)
+                }
             }
         }
     }
@@ -185,7 +208,9 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
             }
 
             goCoder?.cameraPreview?.switchCamera()
-            torchButton.setImage(UIImage(named: "torch_on_button"), for: UIControl.State())
+            
+            torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
+            torchButton.setTitle(String.fontAwesomeIcon(name: .lightbulb), for: .normal)
             self.updateUIControls()
         }
     }
@@ -194,14 +219,23 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
         var newTorchState = goCoder?.cameraPreview?.camera?.isTorchOn ?? true
         newTorchState = !newTorchState
         goCoder?.cameraPreview?.camera?.isTorchOn = newTorchState
-        torchButton.setImage(UIImage(named: newTorchState ? "torch_off_button" : "torch_on_button"), for: UIControl.State())
+        
+        torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: newTorchState ? .regular : .solid)
+        torchButton.setTitle(String.fontAwesomeIcon(name: .lightbulb), for: .normal)
     }
 
     @IBAction func didTapMicButton(_ sender:AnyObject?) {
         var newMutedState = self.goCoder?.isAudioMuted ?? true
         newMutedState = !newMutedState
         goCoder?.isAudioMuted = newMutedState
-        micButton.setImage(UIImage(named: newMutedState ? "mic_off_button" : "mic_on_button"), for: UIControl.State())
+        
+        micButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
+        if newMutedState {
+            micButton.setTitle(String.fontAwesomeIcon(name: .microphoneAltSlash), for: .normal)
+        }
+        else {
+            micButton.setTitle(String.fontAwesomeIcon(name: .microphone), for: .normal)
+        }
     }
 
     @IBAction func didTapSettingsButton(_ sender:AnyObject?) {
@@ -296,13 +330,15 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
         switch (status.state) {
         case .idle:
             DispatchQueue.main.async { () -> Void in
-                self.broadcastButton.setImage(UIImage(named: "start_button"), for: UIControl.State())
+                self.broadcastButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 75, style: .solid)
+                self.broadcastButton.setTitle(String.fontAwesomeIcon(name: .circle), for: .normal)
                 self.updateUIControls()
             }
 
         case .broadcasting:
             DispatchQueue.main.async { () -> Void in
-                self.broadcastButton.setImage(UIImage(named: "stop_button"), for: UIControl.State())
+                self.broadcastButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 75, style: .regular)
+                self.broadcastButton.setTitle(String.fontAwesomeIcon(name: .stopCircle), for: .normal)
                 self.updateUIControls()
             }
 

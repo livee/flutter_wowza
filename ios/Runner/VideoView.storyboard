@@ -25,7 +25,9 @@
                                     <constraint firstAttribute="width" constant="75" id="7U0-lX-hLc"/>
                                     <constraint firstAttribute="height" constant="75" id="fnG-3F-O8U"/>
                                 </constraints>
-                                <state key="normal" image="start_button"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="didTapBroadcastButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="Bg9-nE-kYi"/>
                                 </connections>
@@ -36,7 +38,6 @@
                                     <constraint firstAttribute="width" constant="45" id="NZH-AO-Y7H"/>
                                     <constraint firstAttribute="height" constant="45" id="VKq-N5-yxX"/>
                                 </constraints>
-                                <state key="normal" image="back_icon"/>
                                 <connections>
                                     <action selector="didTapSettingsButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="xgn-YF-7dR"/>
                                 </connections>
@@ -47,7 +48,6 @@
                                     <constraint firstAttribute="width" constant="45" id="8Kc-bq-XDI"/>
                                     <constraint firstAttribute="height" constant="45" id="jVo-sW-iRd"/>
                                 </constraints>
-                                <state key="normal" image="switch_camera_button"/>
                                 <connections>
                                     <action selector="didTapSwitchCameraButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="ddF-oZ-HSb"/>
                                 </connections>
@@ -58,7 +58,6 @@
                                     <constraint firstAttribute="width" constant="45" id="PIR-BA-euW"/>
                                     <constraint firstAttribute="height" constant="45" id="eZ7-Az-sxm"/>
                                 </constraints>
-                                <state key="normal" image="torch_on_button"/>
                                 <connections>
                                     <action selector="didTapTorchButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="K6l-y2-f7t"/>
                                 </connections>
@@ -69,7 +68,6 @@
                                     <constraint firstAttribute="width" constant="45" id="2WP-vM-UaE"/>
                                     <constraint firstAttribute="height" constant="45" id="8YG-sn-mTE"/>
                                 </constraints>
-                                <state key="normal" image="mic_on_button"/>
                                 <connections>
                                     <action selector="didTapMicButton:" destination="Mjt-yW-ku4" eventType="touchUpInside" id="F8i-q7-NRM"/>
                                 </connections>
@@ -108,11 +106,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back_icon" width="41" height="41"/>
-        <image name="mic_on_button" width="45" height="45"/>
-        <image name="start_button" width="75" height="75"/>
-        <image name="switch_camera_button" width="45" height="45"/>
-        <image name="torch_on_button" width="45" height="45"/>
         <image name="wowza" width="320" height="112.5"/>
     </resources>
 </document>
