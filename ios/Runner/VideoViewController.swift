@@ -76,17 +76,18 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
         settingsButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 40, style: .solid)
         settingsButton.setTitle(String.fontAwesomeIcon(name: .reply), for: .normal)
         
-        switchCameraButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
+        switchCameraButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 40, style: .solid)
         switchCameraButton.setTitle(String.fontAwesomeIcon(name: .sync), for: .normal)
         
         broadcastButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 75, style: .solid)
         broadcastButton.setTitle(String.fontAwesomeIcon(name: .circle), for: .normal)
         
-        torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
-        torchButton.setTitle(String.fontAwesomeIcon(name: .lightbulb), for: .normal)
+        torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .regular)
+        torchButton.setTitle(String.fontAwesomeIcon(name: .bolt), for: .normal)
         
+        micButton.isHidden = true
         micButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
-        micButton.setTitle(String.fontAwesomeIcon(name: .volumeDown), for: .normal)
+        micButton.setTitle(String.fontAwesomeIcon(name: .volumeOff), for: .normal)
         
     }
 
@@ -196,7 +197,7 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
                     micButton.setTitle(String.fontAwesomeIcon(name: .volumeMute), for: .normal)
                 }
                 else {
-                    micButton.setTitle(String.fontAwesomeIcon(name: .volumeDown), for: .normal)
+                    micButton.setTitle(String.fontAwesomeIcon(name: .volumeOff), for: .normal)
                 }
             }
         }
@@ -211,8 +212,8 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
 
             goCoder?.cameraPreview?.switchCamera()
             
-            torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .solid)
-            torchButton.setTitle(String.fontAwesomeIcon(name: .lightbulb), for: .normal)
+            torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: .regular)
+            torchButton.setTitle(String.fontAwesomeIcon(name: .bolt), for: .normal)
             self.updateUIControls()
         }
     }
@@ -222,8 +223,8 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
         newTorchState = !newTorchState
         goCoder?.cameraPreview?.camera?.isTorchOn = newTorchState
         
-        torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: newTorchState ? .regular : .solid)
-        torchButton.setTitle(String.fontAwesomeIcon(name: .lightbulb), for: .normal)
+        torchButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 45, style: newTorchState ? .solid : .regular)
+        torchButton.setTitle(String.fontAwesomeIcon(name: .bolt), for: .normal)
     }
 
     @IBAction func didTapMicButton(_ sender:AnyObject?) {
@@ -236,7 +237,7 @@ class VideoViewController: UIViewController, WOWZBroadcastStatusCallback, WOWZVi
             micButton.setTitle(String.fontAwesomeIcon(name: .volumeMute), for: .normal)
         }
         else {
-            micButton.setTitle(String.fontAwesomeIcon(name: .volumeDown), for: .normal)
+            micButton.setTitle(String.fontAwesomeIcon(name: .volumeOff), for: .normal)
         }
     }
 

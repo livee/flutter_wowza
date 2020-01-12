@@ -26,6 +26,8 @@
 		1C78633D23B46371002D109D /* SwiftWowzaStreamPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78633C23B46371002D109D /* SwiftWowzaStreamPlugin.swift */; };
 		1C78634023B4639C002D109D /* WowzaStreamPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C78633F23B4639C002D109D /* WowzaStreamPlugin.m */; };
 		1C78634423B46F20002D109D /* VideoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C78634323B46F1F002D109D /* VideoView.storyboard */; };
+		1C81CAF623CAE5690065F101 /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C81CAF523CAE5690065F101 /* Font Awesome 5 Free-Regular-400.otf */; };
+		1C81CAF823CAE5710065F101 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C81CAF723CAE5710065F101 /* Font Awesome 5 Free-Solid-900.otf */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -80,6 +82,8 @@
 		1C78633E23B4639C002D109D /* WowzaStreamPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WowzaStreamPlugin.h; sourceTree = "<group>"; };
 		1C78633F23B4639C002D109D /* WowzaStreamPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WowzaStreamPlugin.m; sourceTree = "<group>"; };
 		1C78634323B46F1F002D109D /* VideoView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VideoView.storyboard; sourceTree = "<group>"; };
+		1C81CAF523CAE5690065F101 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		1C81CAF723CAE5710065F101 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		1C4E051623CADDC400665B37 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1C81CAF723CAE5710065F101 /* Font Awesome 5 Free-Solid-900.otf */,
+				1C81CAF523CAE5690065F101 /* Font Awesome 5 Free-Regular-400.otf */,
 				1C4E051723CADDC400665B37 /* Font Awesome 5 Duotone-Solid-900.otf */,
 				1C4E051823CADDC400665B37 /* Font Awesome 5 Pro-Regular-400.otf */,
 				1C4E051923CADDC400665B37 /* Font Awesome 5 Pro-Light-300.otf */,
@@ -294,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C4E051C23CADDC400665B37 /* Font Awesome 5 Duotone-Solid-900.otf in Resources */,
+				1C81CAF623CAE5690065F101 /* Font Awesome 5 Free-Regular-400.otf in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				1C78634423B46F20002D109D /* VideoView.storyboard in Resources */,
 				1C4E051D23CADDC400665B37 /* Font Awesome 5 Pro-Regular-400.otf in Resources */,
@@ -301,6 +308,7 @@
 				1C4E051F23CADDC400665B37 /* Font Awesome 5 Brands-Regular-400.otf in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				1C81CAF823CAE5710065F101 /* Font Awesome 5 Free-Solid-900.otf in Resources */,
 				1C4E051E23CADDC400665B37 /* Font Awesome 5 Pro-Light-300.otf in Resources */,
 				1C78633023B44825002D109D /* AppSettings.storyboard in Resources */,
 				1C4E052023CADDC400665B37 /* Font Awesome 5 Pro-Solid-900.otf in Resources */,
